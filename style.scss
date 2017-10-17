@@ -1,0 +1,2393 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('#{$icomoon-font-path}/icomoon.ttf?ed5m2m') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?ed5m2m') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?ed5m2m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icomoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-500px {
+  &:before {
+    content: $icomoon-500px;
+  }
+}
+.icomoon-address {
+  &:before {
+    content: $icomoon-address;
+  }
+}
+.icomoon-add-to-list {
+  &:before {
+    content: $icomoon-add-to-list;
+  }
+}
+.icomoon-add-user {
+  &:before {
+    content: $icomoon-add-user;
+  }
+}
+.icomoon-adjust {
+  &:before {
+    content: $icomoon-adjust;
+  }
+}
+.icomoon-air {
+  &:before {
+    content: $icomoon-air;
+  }
+}
+.icomoon-aircraft {
+  &:before {
+    content: $icomoon-aircraft;
+  }
+}
+.icomoon-aircraft-landing {
+  &:before {
+    content: $icomoon-aircraft-landing;
+  }
+}
+.icomoon-aircraft-take-off {
+  &:before {
+    content: $icomoon-aircraft-take-off;
+  }
+}
+.icomoon-alarm {
+  &:before {
+    content: $icomoon-alarm;
+  }
+}
+.icomoon-align-bottom {
+  &:before {
+    content: $icomoon-align-bottom;
+  }
+}
+.icomoon-align-horizontal-middle {
+  &:before {
+    content: $icomoon-align-horizontal-middle;
+  }
+}
+.icomoon-align-left {
+  &:before {
+    content: $icomoon-align-left;
+  }
+}
+.icomoon-align-right {
+  &:before {
+    content: $icomoon-align-right;
+  }
+}
+.icomoon-align-top {
+  &:before {
+    content: $icomoon-align-top;
+  }
+}
+.icomoon-align-vertical-middle {
+  &:before {
+    content: $icomoon-align-vertical-middle;
+  }
+}
+.icomoon-ampersand {
+  &:before {
+    content: $icomoon-ampersand;
+  }
+}
+.icomoon-app-store {
+  &:before {
+    content: $icomoon-app-store;
+  }
+}
+.icomoon-archive {
+  &:before {
+    content: $icomoon-archive;
+  }
+}
+.icomoon-area-graph {
+  &:before {
+    content: $icomoon-area-graph;
+  }
+}
+.icomoon-arrow-bold-down {
+  &:before {
+    content: $icomoon-arrow-bold-down;
+  }
+}
+.icomoon-arrow-bold-left {
+  &:before {
+    content: $icomoon-arrow-bold-left;
+  }
+}
+.icomoon-arrow-bold-right {
+  &:before {
+    content: $icomoon-arrow-bold-right;
+  }
+}
+.icomoon-arrow-bold-up {
+  &:before {
+    content: $icomoon-arrow-bold-up;
+  }
+}
+.icomoon-arrow-down {
+  &:before {
+    content: $icomoon-arrow-down;
+  }
+}
+.icomoon-arrow-down2 {
+  &:before {
+    content: $icomoon-arrow-down2;
+  }
+}
+.icomoon-arrow-down-left2 {
+  &:before {
+    content: $icomoon-arrow-down-left2;
+  }
+}
+.icomoon-arrow-down-right2 {
+  &:before {
+    content: $icomoon-arrow-down-right2;
+  }
+}
+.icomoon-arrow-left {
+  &:before {
+    content: $icomoon-arrow-left;
+  }
+}
+.icomoon-arrow-left2 {
+  &:before {
+    content: $icomoon-arrow-left2;
+  }
+}
+.icomoon-arrow-long-down {
+  &:before {
+    content: $icomoon-arrow-long-down;
+  }
+}
+.icomoon-arrow-long-left {
+  &:before {
+    content: $icomoon-arrow-long-left;
+  }
+}
+.icomoon-arrow-long-right {
+  &:before {
+    content: $icomoon-arrow-long-right;
+  }
+}
+.icomoon-arrow-long-up {
+  &:before {
+    content: $icomoon-arrow-long-up;
+  }
+}
+.icomoon-arrow-right {
+  &:before {
+    content: $icomoon-arrow-right;
+  }
+}
+.icomoon-arrow-right2 {
+  &:before {
+    content: $icomoon-arrow-right2;
+  }
+}
+.icomoon-arrow-up {
+  &:before {
+    content: $icomoon-arrow-up;
+  }
+}
+.icomoon-arrow-up2 {
+  &:before {
+    content: $icomoon-arrow-up2;
+  }
+}
+.icomoon-arrow-up-left2 {
+  &:before {
+    content: $icomoon-arrow-up-left2;
+  }
+}
+.icomoon-arrow-up-right2 {
+  &:before {
+    content: $icomoon-arrow-up-right2;
+  }
+}
+.icomoon-arrow-with-circle-down {
+  &:before {
+    content: $icomoon-arrow-with-circle-down;
+  }
+}
+.icomoon-arrow-with-circle-left {
+  &:before {
+    content: $icomoon-arrow-with-circle-left;
+  }
+}
+.icomoon-arrow-with-circle-right {
+  &:before {
+    content: $icomoon-arrow-with-circle-right;
+  }
+}
+.icomoon-arrow-with-circle-up {
+  &:before {
+    content: $icomoon-arrow-with-circle-up;
+  }
+}
+.icomoon-attachment {
+  &:before {
+    content: $icomoon-attachment;
+  }
+}
+.icomoon-awareness-ribbon {
+  &:before {
+    content: $icomoon-awareness-ribbon;
+  }
+}
+.icomoon-back {
+  &:before {
+    content: $icomoon-back;
+  }
+}
+.icomoon-back-in-time {
+  &:before {
+    content: $icomoon-back-in-time;
+  }
+}
+.icomoon-baidu {
+  &:before {
+    content: $icomoon-baidu;
+  }
+}
+.icomoon-bar-graph {
+  &:before {
+    content: $icomoon-bar-graph;
+  }
+}
+.icomoon-basecamp {
+  &:before {
+    content: $icomoon-basecamp;
+  }
+}
+.icomoon-battery {
+  &:before {
+    content: $icomoon-battery;
+  }
+}
+.icomoon-beamed-note {
+  &:before {
+    content: $icomoon-beamed-note;
+  }
+}
+.icomoon-behance {
+  &:before {
+    content: $icomoon-behance;
+  }
+}
+.icomoon-bell {
+  &:before {
+    content: $icomoon-bell;
+  }
+}
+.icomoon-binoculars {
+  &:before {
+    content: $icomoon-binoculars;
+  }
+}
+.icomoon-blackboard {
+  &:before {
+    content: $icomoon-blackboard;
+  }
+}
+.icomoon-block {
+  &:before {
+    content: $icomoon-block;
+  }
+}
+.icomoon-book {
+  &:before {
+    content: $icomoon-book;
+  }
+}
+.icomoon-bookmark {
+  &:before {
+    content: $icomoon-bookmark;
+  }
+}
+.icomoon-bookmarks {
+  &:before {
+    content: $icomoon-bookmarks;
+  }
+}
+.icomoon-bowl {
+  &:before {
+    content: $icomoon-bowl;
+  }
+}
+.icomoon-box {
+  &:before {
+    content: $icomoon-box;
+  }
+}
+.icomoon-briefcase {
+  &:before {
+    content: $icomoon-briefcase;
+  }
+}
+.icomoon-browser {
+  &:before {
+    content: $icomoon-browser;
+  }
+}
+.icomoon-brush {
+  &:before {
+    content: $icomoon-brush;
+  }
+}
+.icomoon-bubble {
+  &:before {
+    content: $icomoon-bubble;
+  }
+}
+.icomoon-bubble2 {
+  &:before {
+    content: $icomoon-bubble2;
+  }
+}
+.icomoon-bubbles {
+  &:before {
+    content: $icomoon-bubbles;
+  }
+}
+.icomoon-bubbles2 {
+  &:before {
+    content: $icomoon-bubbles2;
+  }
+}
+.icomoon-bubbles3 {
+  &:before {
+    content: $icomoon-bubbles3;
+  }
+}
+.icomoon-bubbles4 {
+  &:before {
+    content: $icomoon-bubbles4;
+  }
+}
+.icomoon-bucket {
+  &:before {
+    content: $icomoon-bucket;
+  }
+}
+.icomoon-bug {
+  &:before {
+    content: $icomoon-bug;
+  }
+}
+.icomoon-cake {
+  &:before {
+    content: $icomoon-cake;
+  }
+}
+.icomoon-calculator {
+  &:before {
+    content: $icomoon-calculator;
+  }
+}
+.icomoon-calendar {
+  &:before {
+    content: $icomoon-calendar;
+  }
+}
+.icomoon-camera {
+  &:before {
+    content: $icomoon-camera;
+  }
+}
+.icomoon-ccw {
+  &:before {
+    content: $icomoon-ccw;
+  }
+}
+.icomoon-chat {
+  &:before {
+    content: $icomoon-chat;
+  }
+}
+.icomoon-check {
+  &:before {
+    content: $icomoon-check;
+  }
+}
+.icomoon-chevron-down {
+  &:before {
+    content: $icomoon-chevron-down;
+  }
+}
+.icomoon-chevron-left {
+  &:before {
+    content: $icomoon-chevron-left;
+  }
+}
+.icomoon-chevron-right {
+  &:before {
+    content: $icomoon-chevron-right;
+  }
+}
+.icomoon-chevron-small-down {
+  &:before {
+    content: $icomoon-chevron-small-down;
+  }
+}
+.icomoon-chevron-small-left {
+  &:before {
+    content: $icomoon-chevron-small-left;
+  }
+}
+.icomoon-chevron-small-right {
+  &:before {
+    content: $icomoon-chevron-small-right;
+  }
+}
+.icomoon-chevron-small-up {
+  &:before {
+    content: $icomoon-chevron-small-up;
+  }
+}
+.icomoon-chevron-thin-down {
+  &:before {
+    content: $icomoon-chevron-thin-down;
+  }
+}
+.icomoon-chevron-thin-left {
+  &:before {
+    content: $icomoon-chevron-thin-left;
+  }
+}
+.icomoon-chevron-thin-right {
+  &:before {
+    content: $icomoon-chevron-thin-right;
+  }
+}
+.icomoon-chevron-thin-up {
+  &:before {
+    content: $icomoon-chevron-thin-up;
+  }
+}
+.icomoon-chevron-up {
+  &:before {
+    content: $icomoon-chevron-up;
+  }
+}
+.icomoon-chevron-with-circle-down {
+  &:before {
+    content: $icomoon-chevron-with-circle-down;
+  }
+}
+.icomoon-chevron-with-circle-left {
+  &:before {
+    content: $icomoon-chevron-with-circle-left;
+  }
+}
+.icomoon-chevron-with-circle-right {
+  &:before {
+    content: $icomoon-chevron-with-circle-right;
+  }
+}
+.icomoon-chevron-with-circle-up {
+  &:before {
+    content: $icomoon-chevron-with-circle-up;
+  }
+}
+.icomoon-chrome {
+  &:before {
+    content: $icomoon-chrome;
+  }
+}
+.icomoon-circle {
+  &:before {
+    content: $icomoon-circle;
+  }
+}
+.icomoon-circle-with-cross {
+  &:before {
+    content: $icomoon-circle-with-cross;
+  }
+}
+.icomoon-circle-with-minus {
+  &:before {
+    content: $icomoon-circle-with-minus;
+  }
+}
+.icomoon-circle-with-plus {
+  &:before {
+    content: $icomoon-circle-with-plus;
+  }
+}
+.icomoon-circular-graph {
+  &:before {
+    content: $icomoon-circular-graph;
+  }
+}
+.icomoon-clapperboard {
+  &:before {
+    content: $icomoon-clapperboard;
+  }
+}
+.icomoon-classic-computer {
+  &:before {
+    content: $icomoon-classic-computer;
+  }
+}
+.icomoon-clipboard {
+  &:before {
+    content: $icomoon-clipboard;
+  }
+}
+.icomoon-clock {
+  &:before {
+    content: $icomoon-clock;
+  }
+}
+.icomoon-cloud {
+  &:before {
+    content: $icomoon-cloud;
+  }
+}
+.icomoon-code {
+  &:before {
+    content: $icomoon-code;
+  }
+}
+.icomoon-codepen {
+  &:before {
+    content: $icomoon-codepen;
+  }
+}
+.icomoon-coffee-cup {
+  &:before {
+    content: $icomoon-coffee-cup;
+  }
+}
+.icomoon-cog {
+  &:before {
+    content: $icomoon-cog;
+  }
+}
+.icomoon-colours {
+  &:before {
+    content: $icomoon-colours;
+  }
+}
+.icomoon-compass {
+  &:before {
+    content: $icomoon-compass;
+  }
+}
+.icomoon-controller-fast-backward {
+  &:before {
+    content: $icomoon-controller-fast-backward;
+  }
+}
+.icomoon-controller-fast-forward {
+  &:before {
+    content: $icomoon-controller-fast-forward;
+  }
+}
+.icomoon-controller-jump-to-start {
+  &:before {
+    content: $icomoon-controller-jump-to-start;
+  }
+}
+.icomoon-controller-next {
+  &:before {
+    content: $icomoon-controller-next;
+  }
+}
+.icomoon-controller-paus {
+  &:before {
+    content: $icomoon-controller-paus;
+  }
+}
+.icomoon-controller-play {
+  &:before {
+    content: $icomoon-controller-play;
+  }
+}
+.icomoon-controller-record {
+  &:before {
+    content: $icomoon-controller-record;
+  }
+}
+.icomoon-controller-stop {
+  &:before {
+    content: $icomoon-controller-stop;
+  }
+}
+.icomoon-controller-volume {
+  &:before {
+    content: $icomoon-controller-volume;
+  }
+}
+.icomoon-copy {
+  &:before {
+    content: $icomoon-copy;
+  }
+}
+.icomoon-creative-cloud {
+  &:before {
+    content: $icomoon-creative-cloud;
+  }
+}
+.icomoon-creative-commons {
+  &:before {
+    content: $icomoon-creative-commons;
+  }
+}
+.icomoon-creative-commons-attribution {
+  &:before {
+    content: $icomoon-creative-commons-attribution;
+  }
+}
+.icomoon-creative-commons-noderivs {
+  &:before {
+    content: $icomoon-creative-commons-noderivs;
+  }
+}
+.icomoon-creative-commons-noncommercial-eu {
+  &:before {
+    content: $icomoon-creative-commons-noncommercial-eu;
+  }
+}
+.icomoon-creative-commons-noncommercial-us {
+  &:before {
+    content: $icomoon-creative-commons-noncommercial-us;
+  }
+}
+.icomoon-creative-commons-public-domain {
+  &:before {
+    content: $icomoon-creative-commons-public-domain;
+  }
+}
+.icomoon-creative-commons-remix {
+  &:before {
+    content: $icomoon-creative-commons-remix;
+  }
+}
+.icomoon-creative-commons-share {
+  &:before {
+    content: $icomoon-creative-commons-share;
+  }
+}
+.icomoon-creative-commons-sharealike {
+  &:before {
+    content: $icomoon-creative-commons-sharealike;
+  }
+}
+.icomoon-credit {
+  &:before {
+    content: $icomoon-credit;
+  }
+}
+.icomoon-credit-card {
+  &:before {
+    content: $icomoon-credit-card;
+  }
+}
+.icomoon-crop {
+  &:before {
+    content: $icomoon-crop;
+  }
+}
+.icomoon-cross {
+  &:before {
+    content: $icomoon-cross;
+  }
+}
+.icomoon-css3 {
+  &:before {
+    content: $icomoon-css3;
+  }
+}
+.icomoon-cup {
+  &:before {
+    content: $icomoon-cup;
+  }
+}
+.icomoon-cw {
+  &:before {
+    content: $icomoon-cw;
+  }
+}
+.icomoon-cycle {
+  &:before {
+    content: $icomoon-cycle;
+  }
+}
+.icomoon-database {
+  &:before {
+    content: $icomoon-database;
+  }
+}
+.icomoon-delicious {
+  &:before {
+    content: $icomoon-delicious;
+  }
+}
+.icomoon-deviantart {
+  &:before {
+    content: $icomoon-deviantart;
+  }
+}
+.icomoon-dial-pad {
+  &:before {
+    content: $icomoon-dial-pad;
+  }
+}
+.icomoon-direction {
+  &:before {
+    content: $icomoon-direction;
+  }
+}
+.icomoon-document {
+  &:before {
+    content: $icomoon-document;
+  }
+}
+.icomoon-document-landscape {
+  &:before {
+    content: $icomoon-document-landscape;
+  }
+}
+.icomoon-documents {
+  &:before {
+    content: $icomoon-documents;
+  }
+}
+.icomoon-dot-single {
+  &:before {
+    content: $icomoon-dot-single;
+  }
+}
+.icomoon-dots-three-horizontal {
+  &:before {
+    content: $icomoon-dots-three-horizontal;
+  }
+}
+.icomoon-dots-three-vertical {
+  &:before {
+    content: $icomoon-dots-three-vertical;
+  }
+}
+.icomoon-dots-two-horizontal {
+  &:before {
+    content: $icomoon-dots-two-horizontal;
+  }
+}
+.icomoon-dots-two-vertical {
+  &:before {
+    content: $icomoon-dots-two-vertical;
+  }
+}
+.icomoon-download {
+  &:before {
+    content: $icomoon-download;
+  }
+}
+.icomoon-dribbble {
+  &:before {
+    content: $icomoon-dribbble;
+  }
+}
+.icomoon-dribbble-with-circle {
+  &:before {
+    content: $icomoon-dribbble-with-circle;
+  }
+}
+.icomoon-drink {
+  &:before {
+    content: $icomoon-drink;
+  }
+}
+.icomoon-drive {
+  &:before {
+    content: $icomoon-drive;
+  }
+}
+.icomoon-drop {
+  &:before {
+    content: $icomoon-drop;
+  }
+}
+.icomoon-dropbox {
+  &:before {
+    content: $icomoon-dropbox;
+  }
+}
+.icomoon-edge {
+  &:before {
+    content: $icomoon-edge;
+  }
+}
+.icomoon-edit {
+  &:before {
+    content: $icomoon-edit;
+  }
+}
+.icomoon-email {
+  &:before {
+    content: $icomoon-email;
+  }
+}
+.icomoon-emoji-flirt {
+  &:before {
+    content: $icomoon-emoji-flirt;
+  }
+}
+.icomoon-emoji-happy {
+  &:before {
+    content: $icomoon-emoji-happy;
+  }
+}
+.icomoon-emoji-neutral {
+  &:before {
+    content: $icomoon-emoji-neutral;
+  }
+}
+.icomoon-emoji-sad {
+  &:before {
+    content: $icomoon-emoji-sad;
+  }
+}
+.icomoon-erase {
+  &:before {
+    content: $icomoon-erase;
+  }
+}
+.icomoon-eraser {
+  &:before {
+    content: $icomoon-eraser;
+  }
+}
+.icomoon-evernote {
+  &:before {
+    content: $icomoon-evernote;
+  }
+}
+.icomoon-export {
+  &:before {
+    content: $icomoon-export;
+  }
+}
+.icomoon-eye {
+  &:before {
+    content: $icomoon-eye;
+  }
+}
+.icomoon-eye-with-line {
+  &:before {
+    content: $icomoon-eye-with-line;
+  }
+}
+.icomoon-facebook {
+  &:before {
+    content: $icomoon-facebook;
+  }
+}
+.icomoon-facebook-with-circle {
+  &:before {
+    content: $icomoon-facebook-with-circle;
+  }
+}
+.icomoon-feather {
+  &:before {
+    content: $icomoon-feather;
+  }
+}
+.icomoon-finder {
+  &:before {
+    content: $icomoon-finder;
+  }
+}
+.icomoon-fingerprint {
+  &:before {
+    content: $icomoon-fingerprint;
+  }
+}
+.icomoon-firefox {
+  &:before {
+    content: $icomoon-firefox;
+  }
+}
+.icomoon-flag {
+  &:before {
+    content: $icomoon-flag;
+  }
+}
+.icomoon-flash {
+  &:before {
+    content: $icomoon-flash;
+  }
+}
+.icomoon-flashlight {
+  &:before {
+    content: $icomoon-flashlight;
+  }
+}
+.icomoon-flat-brush {
+  &:before {
+    content: $icomoon-flat-brush;
+  }
+}
+.icomoon-flattr {
+  &:before {
+    content: $icomoon-flattr;
+  }
+}
+.icomoon-flickr {
+  &:before {
+    content: $icomoon-flickr;
+  }
+}
+.icomoon-flickr-with-circle {
+  &:before {
+    content: $icomoon-flickr-with-circle;
+  }
+}
+.icomoon-flow-branch {
+  &:before {
+    content: $icomoon-flow-branch;
+  }
+}
+.icomoon-flow-cascade {
+  &:before {
+    content: $icomoon-flow-cascade;
+  }
+}
+.icomoon-flower {
+  &:before {
+    content: $icomoon-flower;
+  }
+}
+.icomoon-flow-line {
+  &:before {
+    content: $icomoon-flow-line;
+  }
+}
+.icomoon-flow-parallel {
+  &:before {
+    content: $icomoon-flow-parallel;
+  }
+}
+.icomoon-flow-tree {
+  &:before {
+    content: $icomoon-flow-tree;
+  }
+}
+.icomoon-folder {
+  &:before {
+    content: $icomoon-folder;
+  }
+}
+.icomoon-folder-download {
+  &:before {
+    content: $icomoon-folder-download;
+  }
+}
+.icomoon-folder-images {
+  &:before {
+    content: $icomoon-folder-images;
+  }
+}
+.icomoon-folder-minus {
+  &:before {
+    content: $icomoon-folder-minus;
+  }
+}
+.icomoon-folder-music {
+  &:before {
+    content: $icomoon-folder-music;
+  }
+}
+.icomoon-folder-open {
+  &:before {
+    content: $icomoon-folder-open;
+  }
+}
+.icomoon-folder-plus {
+  &:before {
+    content: $icomoon-folder-plus;
+  }
+}
+.icomoon-folder-upload {
+  &:before {
+    content: $icomoon-folder-upload;
+  }
+}
+.icomoon-folder-video {
+  &:before {
+    content: $icomoon-folder-video;
+  }
+}
+.icomoon-forward {
+  &:before {
+    content: $icomoon-forward;
+  }
+}
+.icomoon-foursquare {
+  &:before {
+    content: $icomoon-foursquare;
+  }
+}
+.icomoon-funnel {
+  &:before {
+    content: $icomoon-funnel;
+  }
+}
+.icomoon-game-controller {
+  &:before {
+    content: $icomoon-game-controller;
+  }
+}
+.icomoon-gauge {
+  &:before {
+    content: $icomoon-gauge;
+  }
+}
+.icomoon-github {
+  &:before {
+    content: $icomoon-github;
+  }
+}
+.icomoon-github-with-circle {
+  &:before {
+    content: $icomoon-github-with-circle;
+  }
+}
+.icomoon-globe {
+  &:before {
+    content: $icomoon-globe;
+  }
+}
+.icomoon-google-drive {
+  &:before {
+    content: $icomoon-google-drive;
+  }
+}
+.icomoon-google-hangouts {
+  &:before {
+    content: $icomoon-google-hangouts;
+  }
+}
+.icomoon-google-play {
+  &:before {
+    content: $icomoon-google-play;
+  }
+}
+.icomoon-google-plus {
+  &:before {
+    content: $icomoon-google-plus;
+  }
+}
+.icomoon-google-plus-with-circle {
+  &:before {
+    content: $icomoon-google-plus-with-circle;
+  }
+}
+.icomoon-graduation-cap {
+  &:before {
+    content: $icomoon-graduation-cap;
+  }
+}
+.icomoon-grid {
+  &:before {
+    content: $icomoon-grid;
+  }
+}
+.icomoon-grid2 {
+  &:before {
+    content: $icomoon-grid2;
+  }
+}
+.icomoon-grooveshark {
+  &:before {
+    content: $icomoon-grooveshark;
+  }
+}
+.icomoon-hair-cross {
+  &:before {
+    content: $icomoon-hair-cross;
+  }
+}
+.icomoon-hand {
+  &:before {
+    content: $icomoon-hand;
+  }
+}
+.icomoon-heart {
+  &:before {
+    content: $icomoon-heart;
+  }
+}
+.icomoon-heart-outlined {
+  &:before {
+    content: $icomoon-heart-outlined;
+  }
+}
+.icomoon-help {
+  &:before {
+    content: $icomoon-help;
+  }
+}
+.icomoon-help-with-circle {
+  &:before {
+    content: $icomoon-help-with-circle;
+  }
+}
+.icomoon-home {
+  &:before {
+    content: $icomoon-home;
+  }
+}
+.icomoon-hour-glass {
+  &:before {
+    content: $icomoon-hour-glass;
+  }
+}
+.icomoon-houzz {
+  &:before {
+    content: $icomoon-houzz;
+  }
+}
+.icomoon-html-five {
+  &:before {
+    content: $icomoon-html-five;
+  }
+}
+.icomoon-html-five2 {
+  &:before {
+    content: $icomoon-html-five2;
+  }
+}
+.icomoon-icloud {
+  &:before {
+    content: $icomoon-icloud;
+  }
+}
+.icomoon-IE {
+  &:before {
+    content: $icomoon-IE;
+  }
+}
+.icomoon-image {
+  &:before {
+    content: $icomoon-image;
+  }
+}
+.icomoon-image-inverted {
+  &:before {
+    content: $icomoon-image-inverted;
+  }
+}
+.icomoon-images {
+  &:before {
+    content: $icomoon-images;
+  }
+}
+.icomoon-inbox {
+  &:before {
+    content: $icomoon-inbox;
+  }
+}
+.icomoon-infinite {
+  &:before {
+    content: $icomoon-infinite;
+  }
+}
+.icomoon-infinite-with-circle {
+  &:before {
+    content: $icomoon-infinite-with-circle;
+  }
+}
+.icomoon-info {
+  &:before {
+    content: $icomoon-info;
+  }
+}
+.icomoon-info-with-circle {
+  &:before {
+    content: $icomoon-info-with-circle;
+  }
+}
+.icomoon-instagram {
+  &:before {
+    content: $icomoon-instagram;
+  }
+}
+.icomoon-instagram-with-circle {
+  &:before {
+    content: $icomoon-instagram-with-circle;
+  }
+}
+.icomoon-install {
+  &:before {
+    content: $icomoon-install;
+  }
+}
+.icomoon-key {
+  &:before {
+    content: $icomoon-key;
+  }
+}
+.icomoon-keyboard {
+  &:before {
+    content: $icomoon-keyboard;
+  }
+}
+.icomoon-lab-flask {
+  &:before {
+    content: $icomoon-lab-flask;
+  }
+}
+.icomoon-landline {
+  &:before {
+    content: $icomoon-landline;
+  }
+}
+.icomoon-language {
+  &:before {
+    content: $icomoon-language;
+  }
+}
+.icomoon-laptop {
+  &:before {
+    content: $icomoon-laptop;
+  }
+}
+.icomoon-lastfm {
+  &:before {
+    content: $icomoon-lastfm;
+  }
+}
+.icomoon-lastfm-with-circle {
+  &:before {
+    content: $icomoon-lastfm-with-circle;
+  }
+}
+.icomoon-layers {
+  &:before {
+    content: $icomoon-layers;
+  }
+}
+.icomoon-leaf {
+  &:before {
+    content: $icomoon-leaf;
+  }
+}
+.icomoon-level-down {
+  &:before {
+    content: $icomoon-level-down;
+  }
+}
+.icomoon-level-up {
+  &:before {
+    content: $icomoon-level-up;
+  }
+}
+.icomoon-lifebuoy {
+  &:before {
+    content: $icomoon-lifebuoy;
+  }
+}
+.icomoon-light-bulb {
+  &:before {
+    content: $icomoon-light-bulb;
+  }
+}
+.icomoon-light-down {
+  &:before {
+    content: $icomoon-light-down;
+  }
+}
+.icomoon-light-up {
+  &:before {
+    content: $icomoon-light-up;
+  }
+}
+.icomoon-line-graph {
+  &:before {
+    content: $icomoon-line-graph;
+  }
+}
+.icomoon-link {
+  &:before {
+    content: $icomoon-link;
+  }
+}
+.icomoon-linkedin {
+  &:before {
+    content: $icomoon-linkedin;
+  }
+}
+.icomoon-linkedin-with-circle {
+  &:before {
+    content: $icomoon-linkedin-with-circle;
+  }
+}
+.icomoon-list {
+  &:before {
+    content: $icomoon-list;
+  }
+}
+.icomoon-list-ordered {
+  &:before {
+    content: $icomoon-list-ordered;
+  }
+}
+.icomoon-list-unordered {
+  &:before {
+    content: $icomoon-list-unordered;
+  }
+}
+.icomoon-location {
+  &:before {
+    content: $icomoon-location;
+  }
+}
+.icomoon-location-pin {
+  &:before {
+    content: $icomoon-location-pin;
+  }
+}
+.icomoon-lock {
+  &:before {
+    content: $icomoon-lock;
+  }
+}
+.icomoon-lock-open {
+  &:before {
+    content: $icomoon-lock-open;
+  }
+}
+.icomoon-login {
+  &:before {
+    content: $icomoon-login;
+  }
+}
+.icomoon-log-out {
+  &:before {
+    content: $icomoon-log-out;
+  }
+}
+.icomoon-loop {
+  &:before {
+    content: $icomoon-loop;
+  }
+}
+.icomoon-magnet {
+  &:before {
+    content: $icomoon-magnet;
+  }
+}
+.icomoon-magnifying-glass {
+  &:before {
+    content: $icomoon-magnifying-glass;
+  }
+}
+.icomoon-mail {
+  &:before {
+    content: $icomoon-mail;
+  }
+}
+.icomoon-mail-with-circle {
+  &:before {
+    content: $icomoon-mail-with-circle;
+  }
+}
+.icomoon-man {
+  &:before {
+    content: $icomoon-man;
+  }
+}
+.icomoon-map {
+  &:before {
+    content: $icomoon-map;
+  }
+}
+.icomoon-mask {
+  &:before {
+    content: $icomoon-mask;
+  }
+}
+.icomoon-medal {
+  &:before {
+    content: $icomoon-medal;
+  }
+}
+.icomoon-medium {
+  &:before {
+    content: $icomoon-medium;
+  }
+}
+.icomoon-medium-with-circle {
+  &:before {
+    content: $icomoon-medium-with-circle;
+  }
+}
+.icomoon-megaphone {
+  &:before {
+    content: $icomoon-megaphone;
+  }
+}
+.icomoon-menu {
+  &:before {
+    content: $icomoon-menu;
+  }
+}
+.icomoon-merge {
+  &:before {
+    content: $icomoon-merge;
+  }
+}
+.icomoon-message {
+  &:before {
+    content: $icomoon-message;
+  }
+}
+.icomoon-mic {
+  &:before {
+    content: $icomoon-mic;
+  }
+}
+.icomoon-minus {
+  &:before {
+    content: $icomoon-minus;
+  }
+}
+.icomoon-mixi {
+  &:before {
+    content: $icomoon-mixi;
+  }
+}
+.icomoon-mobile {
+  &:before {
+    content: $icomoon-mobile;
+  }
+}
+.icomoon-modern-mic {
+  &:before {
+    content: $icomoon-modern-mic;
+  }
+}
+.icomoon-moon {
+  &:before {
+    content: $icomoon-moon;
+  }
+}
+.icomoon-mouse {
+  &:before {
+    content: $icomoon-mouse;
+  }
+}
+.icomoon-mouse-pointer {
+  &:before {
+    content: $icomoon-mouse-pointer;
+  }
+}
+.icomoon-music {
+  &:before {
+    content: $icomoon-music;
+  }
+}
+.icomoon-network {
+  &:before {
+    content: $icomoon-network;
+  }
+}
+.icomoon-new {
+  &:before {
+    content: $icomoon-new;
+  }
+}
+.icomoon-new-message {
+  &:before {
+    content: $icomoon-new-message;
+  }
+}
+.icomoon-news {
+  &:before {
+    content: $icomoon-news;
+  }
+}
+.icomoon-newsletter {
+  &:before {
+    content: $icomoon-newsletter;
+  }
+}
+.icomoon-new-tab {
+  &:before {
+    content: $icomoon-new-tab;
+  }
+}
+.icomoon-note {
+  &:before {
+    content: $icomoon-note;
+  }
+}
+.icomoon-notification {
+  &:before {
+    content: $icomoon-notification;
+  }
+}
+.icomoon-notifications-off {
+  &:before {
+    content: $icomoon-notifications-off;
+  }
+}
+.icomoon-old-mobile {
+  &:before {
+    content: $icomoon-old-mobile;
+  }
+}
+.icomoon-old-phone {
+  &:before {
+    content: $icomoon-old-phone;
+  }
+}
+.icomoon-onedrive {
+  &:before {
+    content: $icomoon-onedrive;
+  }
+}
+.icomoon-open-book {
+  &:before {
+    content: $icomoon-open-book;
+  }
+}
+.icomoon-opera {
+  &:before {
+    content: $icomoon-opera;
+  }
+}
+.icomoon-palette {
+  &:before {
+    content: $icomoon-palette;
+  }
+}
+.icomoon-paper-plane {
+  &:before {
+    content: $icomoon-paper-plane;
+  }
+}
+.icomoon-paypal {
+  &:before {
+    content: $icomoon-paypal;
+  }
+}
+.icomoon-pencil {
+  &:before {
+    content: $icomoon-pencil;
+  }
+}
+.icomoon-phone {
+  &:before {
+    content: $icomoon-phone;
+  }
+}
+.icomoon-picasa {
+  &:before {
+    content: $icomoon-picasa;
+  }
+}
+.icomoon-pie-chart {
+  &:before {
+    content: $icomoon-pie-chart;
+  }
+}
+.icomoon-pin {
+  &:before {
+    content: $icomoon-pin;
+  }
+}
+.icomoon-pinterest {
+  &:before {
+    content: $icomoon-pinterest;
+  }
+}
+.icomoon-pinterest-with-circle {
+  &:before {
+    content: $icomoon-pinterest-with-circle;
+  }
+}
+.icomoon-plus {
+  &:before {
+    content: $icomoon-plus;
+  }
+}
+.icomoon-popup {
+  &:before {
+    content: $icomoon-popup;
+  }
+}
+.icomoon-power-plug {
+  &:before {
+    content: $icomoon-power-plug;
+  }
+}
+.icomoon-price-ribbon {
+  &:before {
+    content: $icomoon-price-ribbon;
+  }
+}
+.icomoon-price-tag {
+  &:before {
+    content: $icomoon-price-tag;
+  }
+}
+.icomoon-price-tag2 {
+  &:before {
+    content: $icomoon-price-tag2;
+  }
+}
+.icomoon-price-tags {
+  &:before {
+    content: $icomoon-price-tags;
+  }
+}
+.icomoon-print {
+  &:before {
+    content: $icomoon-print;
+  }
+}
+.icomoon-progress-empty {
+  &:before {
+    content: $icomoon-progress-empty;
+  }
+}
+.icomoon-progress-full {
+  &:before {
+    content: $icomoon-progress-full;
+  }
+}
+.icomoon-progress-one {
+  &:before {
+    content: $icomoon-progress-one;
+  }
+}
+.icomoon-progress-two {
+  &:before {
+    content: $icomoon-progress-two;
+  }
+}
+.icomoon-publish {
+  &:before {
+    content: $icomoon-publish;
+  }
+}
+.icomoon-qq {
+  &:before {
+    content: $icomoon-qq;
+  }
+}
+.icomoon-qq-with-circle {
+  &:before {
+    content: $icomoon-qq-with-circle;
+  }
+}
+.icomoon-quote {
+  &:before {
+    content: $icomoon-quote;
+  }
+}
+.icomoon-radio {
+  &:before {
+    content: $icomoon-radio;
+  }
+}
+.icomoon-raft {
+  &:before {
+    content: $icomoon-raft;
+  }
+}
+.icomoon-raft-with-circle {
+  &:before {
+    content: $icomoon-raft-with-circle;
+  }
+}
+.icomoon-rainbow {
+  &:before {
+    content: $icomoon-rainbow;
+  }
+}
+.icomoon-rdio {
+  &:before {
+    content: $icomoon-rdio;
+  }
+}
+.icomoon-rdio-with-circle {
+  &:before {
+    content: $icomoon-rdio-with-circle;
+  }
+}
+.icomoon-reddit {
+  &:before {
+    content: $icomoon-reddit;
+  }
+}
+.icomoon-remove-user {
+  &:before {
+    content: $icomoon-remove-user;
+  }
+}
+.icomoon-renren {
+  &:before {
+    content: $icomoon-renren;
+  }
+}
+.icomoon-reply {
+  &:before {
+    content: $icomoon-reply;
+  }
+}
+.icomoon-reply-all {
+  &:before {
+    content: $icomoon-reply-all;
+  }
+}
+.icomoon-resize-100-percent {
+  &:before {
+    content: $icomoon-resize-100-percent;
+  }
+}
+.icomoon-resize-full-screen {
+  &:before {
+    content: $icomoon-resize-full-screen;
+  }
+}
+.icomoon-retweet {
+  &:before {
+    content: $icomoon-retweet;
+  }
+}
+.icomoon-rocket {
+  &:before {
+    content: $icomoon-rocket;
+  }
+}
+.icomoon-round-brush {
+  &:before {
+    content: $icomoon-round-brush;
+  }
+}
+.icomoon-rss {
+  &:before {
+    content: $icomoon-rss;
+  }
+}
+.icomoon-ruler {
+  &:before {
+    content: $icomoon-ruler;
+  }
+}
+.icomoon-safari {
+  &:before {
+    content: $icomoon-safari;
+  }
+}
+.icomoon-save {
+  &:before {
+    content: $icomoon-save;
+  }
+}
+.icomoon-scissors {
+  &:before {
+    content: $icomoon-scissors;
+  }
+}
+.icomoon-scribd {
+  &:before {
+    content: $icomoon-scribd;
+  }
+}
+.icomoon-search {
+  &:before {
+    content: $icomoon-search;
+  }
+}
+.icomoon-select-arrows {
+  &:before {
+    content: $icomoon-select-arrows;
+  }
+}
+.icomoon-share {
+  &:before {
+    content: $icomoon-share;
+  }
+}
+.icomoon-shareable {
+  &:before {
+    content: $icomoon-shareable;
+  }
+}
+.icomoon-share-alternative {
+  &:before {
+    content: $icomoon-share-alternative;
+  }
+}
+.icomoon-shield {
+  &:before {
+    content: $icomoon-shield;
+  }
+}
+.icomoon-shop {
+  &:before {
+    content: $icomoon-shop;
+  }
+}
+.icomoon-shopping-bag {
+  &:before {
+    content: $icomoon-shopping-bag;
+  }
+}
+.icomoon-shopping-basket {
+  &:before {
+    content: $icomoon-shopping-basket;
+  }
+}
+.icomoon-shopping-cart {
+  &:before {
+    content: $icomoon-shopping-cart;
+  }
+}
+.icomoon-shuffle {
+  &:before {
+    content: $icomoon-shuffle;
+  }
+}
+.icomoon-signal {
+  &:before {
+    content: $icomoon-signal;
+  }
+}
+.icomoon-sina-weibo {
+  &:before {
+    content: $icomoon-sina-weibo;
+  }
+}
+.icomoon-skype {
+  &:before {
+    content: $icomoon-skype;
+  }
+}
+.icomoon-skype-with-circle {
+  &:before {
+    content: $icomoon-skype-with-circle;
+  }
+}
+.icomoon-slideshare {
+  &:before {
+    content: $icomoon-slideshare;
+  }
+}
+.icomoon-smashing {
+  &:before {
+    content: $icomoon-smashing;
+  }
+}
+.icomoon-sound {
+  &:before {
+    content: $icomoon-sound;
+  }
+}
+.icomoon-soundcloud {
+  &:before {
+    content: $icomoon-soundcloud;
+  }
+}
+.icomoon-sound-mix {
+  &:before {
+    content: $icomoon-sound-mix;
+  }
+}
+.icomoon-sound-mute {
+  &:before {
+    content: $icomoon-sound-mute;
+  }
+}
+.icomoon-spinner {
+  &:before {
+    content: $icomoon-spinner;
+  }
+}
+.icomoon-spinner2 {
+  &:before {
+    content: $icomoon-spinner2;
+  }
+}
+.icomoon-sports-club {
+  &:before {
+    content: $icomoon-sports-club;
+  }
+}
+.icomoon-spotify {
+  &:before {
+    content: $icomoon-spotify;
+  }
+}
+.icomoon-spotify-with-circle {
+  &:before {
+    content: $icomoon-spotify-with-circle;
+  }
+}
+.icomoon-spreadsheet {
+  &:before {
+    content: $icomoon-spreadsheet;
+  }
+}
+.icomoon-squared-cross {
+  &:before {
+    content: $icomoon-squared-cross;
+  }
+}
+.icomoon-squared-minus {
+  &:before {
+    content: $icomoon-squared-minus;
+  }
+}
+.icomoon-squared-plus {
+  &:before {
+    content: $icomoon-squared-plus;
+  }
+}
+.icomoon-stack {
+  &:before {
+    content: $icomoon-stack;
+  }
+}
+.icomoon-stackoverflow {
+  &:before {
+    content: $icomoon-stackoverflow;
+  }
+}
+.icomoon-star {
+  &:before {
+    content: $icomoon-star;
+  }
+}
+.icomoon-star-outlined {
+  &:before {
+    content: $icomoon-star-outlined;
+  }
+}
+.icomoon-steam {
+  &:before {
+    content: $icomoon-steam;
+  }
+}
+.icomoon-steam2 {
+  &:before {
+    content: $icomoon-steam2;
+  }
+}
+.icomoon-stopwatch {
+  &:before {
+    content: $icomoon-stopwatch;
+  }
+}
+.icomoon-stumbleupon {
+  &:before {
+    content: $icomoon-stumbleupon;
+  }
+}
+.icomoon-stumbleupon-with-circle {
+  &:before {
+    content: $icomoon-stumbleupon-with-circle;
+  }
+}
+.icomoon-suitcase {
+  &:before {
+    content: $icomoon-suitcase;
+  }
+}
+.icomoon-swap {
+  &:before {
+    content: $icomoon-swap;
+  }
+}
+.icomoon-swarm {
+  &:before {
+    content: $icomoon-swarm;
+  }
+}
+.icomoon-sweden {
+  &:before {
+    content: $icomoon-sweden;
+  }
+}
+.icomoon-switch {
+  &:before {
+    content: $icomoon-switch;
+  }
+}
+.icomoon-tablet {
+  &:before {
+    content: $icomoon-tablet;
+  }
+}
+.icomoon-tablet-mobile-combo {
+  &:before {
+    content: $icomoon-tablet-mobile-combo;
+  }
+}
+.icomoon-tag {
+  &:before {
+    content: $icomoon-tag;
+  }
+}
+.icomoon-text {
+  &:before {
+    content: $icomoon-text;
+  }
+}
+.icomoon-text-document {
+  &:before {
+    content: $icomoon-text-document;
+  }
+}
+.icomoon-text-document-inverted {
+  &:before {
+    content: $icomoon-text-document-inverted;
+  }
+}
+.icomoon-thermometer {
+  &:before {
+    content: $icomoon-thermometer;
+  }
+}
+.icomoon-thumbs-down {
+  &:before {
+    content: $icomoon-thumbs-down;
+  }
+}
+.icomoon-thumbs-up {
+  &:before {
+    content: $icomoon-thumbs-up;
+  }
+}
+.icomoon-thunder-cloud {
+  &:before {
+    content: $icomoon-thunder-cloud;
+  }
+}
+.icomoon-ticket {
+  &:before {
+    content: $icomoon-ticket;
+  }
+}
+.icomoon-time-slot {
+  &:before {
+    content: $icomoon-time-slot;
+  }
+}
+.icomoon-tools {
+  &:before {
+    content: $icomoon-tools;
+  }
+}
+.icomoon-traffic-cone {
+  &:before {
+    content: $icomoon-traffic-cone;
+  }
+}
+.icomoon-trash {
+  &:before {
+    content: $icomoon-trash;
+  }
+}
+.icomoon-trashcan {
+  &:before {
+    content: $icomoon-trashcan;
+  }
+}
+.icomoon-tree {
+  &:before {
+    content: $icomoon-tree;
+  }
+}
+.icomoon-triangle-down {
+  &:before {
+    content: $icomoon-triangle-down;
+  }
+}
+.icomoon-triangle-left {
+  &:before {
+    content: $icomoon-triangle-left;
+  }
+}
+.icomoon-triangle-right {
+  &:before {
+    content: $icomoon-triangle-right;
+  }
+}
+.icomoon-triangle-up {
+  &:before {
+    content: $icomoon-triangle-up;
+  }
+}
+.icomoon-tripadvisor {
+  &:before {
+    content: $icomoon-tripadvisor;
+  }
+}
+.icomoon-trophy {
+  &:before {
+    content: $icomoon-trophy;
+  }
+}
+.icomoon-truck {
+  &:before {
+    content: $icomoon-truck;
+  }
+}
+.icomoon-tumblr {
+  &:before {
+    content: $icomoon-tumblr;
+  }
+}
+.icomoon-tumblr-with-circle {
+  &:before {
+    content: $icomoon-tumblr-with-circle;
+  }
+}
+.icomoon-tv {
+  &:before {
+    content: $icomoon-tv;
+  }
+}
+.icomoon-twitter {
+  &:before {
+    content: $icomoon-twitter;
+  }
+}
+.icomoon-twitter-with-circle {
+  &:before {
+    content: $icomoon-twitter-with-circle;
+  }
+}
+.icomoon-typing {
+  &:before {
+    content: $icomoon-typing;
+  }
+}
+.icomoon-uninstall {
+  &:before {
+    content: $icomoon-uninstall;
+  }
+}
+.icomoon-unread {
+  &:before {
+    content: $icomoon-unread;
+  }
+}
+.icomoon-untag {
+  &:before {
+    content: $icomoon-untag;
+  }
+}
+.icomoon-upload {
+  &:before {
+    content: $icomoon-upload;
+  }
+}
+.icomoon-upload-to-cloud {
+  &:before {
+    content: $icomoon-upload-to-cloud;
+  }
+}
+.icomoon-user {
+  &:before {
+    content: $icomoon-user;
+  }
+}
+.icomoon-users {
+  &:before {
+    content: $icomoon-users;
+  }
+}
+.icomoon-v-card {
+  &:before {
+    content: $icomoon-v-card;
+  }
+}
+.icomoon-video {
+  &:before {
+    content: $icomoon-video;
+  }
+}
+.icomoon-video-camera {
+  &:before {
+    content: $icomoon-video-camera;
+  }
+}
+.icomoon-vimeo {
+  &:before {
+    content: $icomoon-vimeo;
+  }
+}
+.icomoon-vimeo-with-circle {
+  &:before {
+    content: $icomoon-vimeo-with-circle;
+  }
+}
+.icomoon-vine {
+  &:before {
+    content: $icomoon-vine;
+  }
+}
+.icomoon-vine-with-circle {
+  &:before {
+    content: $icomoon-vine-with-circle;
+  }
+}
+.icomoon-vinyl {
+  &:before {
+    content: $icomoon-vinyl;
+  }
+}
+.icomoon-vk {
+  &:before {
+    content: $icomoon-vk;
+  }
+}
+.icomoon-vk-alternitive {
+  &:before {
+    content: $icomoon-vk-alternitive;
+  }
+}
+.icomoon-vk-with-circle {
+  &:before {
+    content: $icomoon-vk-with-circle;
+  }
+}
+.icomoon-voicemail {
+  &:before {
+    content: $icomoon-voicemail;
+  }
+}
+.icomoon-volume-decrease {
+  &:before {
+    content: $icomoon-volume-decrease;
+  }
+}
+.icomoon-volume-high {
+  &:before {
+    content: $icomoon-volume-high;
+  }
+}
+.icomoon-volume-increase {
+  &:before {
+    content: $icomoon-volume-increase;
+  }
+}
+.icomoon-volume-low {
+  &:before {
+    content: $icomoon-volume-low;
+  }
+}
+.icomoon-volume-medium {
+  &:before {
+    content: $icomoon-volume-medium;
+  }
+}
+.icomoon-volume-mute {
+  &:before {
+    content: $icomoon-volume-mute;
+  }
+}
+.icomoon-volume-mute2 {
+  &:before {
+    content: $icomoon-volume-mute2;
+  }
+}
+.icomoon-wallet {
+  &:before {
+    content: $icomoon-wallet;
+  }
+}
+.icomoon-warning {
+  &:before {
+    content: $icomoon-warning;
+  }
+}
+.icomoon-water {
+  &:before {
+    content: $icomoon-water;
+  }
+}
+.icomoon-windows-store {
+  &:before {
+    content: $icomoon-windows-store;
+  }
+}
+.icomoon-wordpress {
+  &:before {
+    content: $icomoon-wordpress;
+  }
+}
+.icomoon-xing {
+  &:before {
+    content: $icomoon-xing;
+  }
+}
+.icomoon-xing-with-circle {
+  &:before {
+    content: $icomoon-xing-with-circle;
+  }
+}
+.icomoon-yahoo {
+  &:before {
+    content: $icomoon-yahoo;
+  }
+}
+.icomoon-yahoo2 {
+  &:before {
+    content: $icomoon-yahoo2;
+  }
+}
+.icomoon-yelp {
+  &:before {
+    content: $icomoon-yelp;
+  }
+}
+.icomoon-youko {
+  &:before {
+    content: $icomoon-youko;
+  }
+}
+.icomoon-youko-with-circle {
+  &:before {
+    content: $icomoon-youko-with-circle;
+  }
+}
+.icomoon-youtube {
+  &:before {
+    content: $icomoon-youtube;
+  }
+}
+.icomoon-youtube-with-circle {
+  &:before {
+    content: $icomoon-youtube-with-circle;
+  }
+}
+
