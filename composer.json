@@ -1,8 +1,8 @@
 {
-	"name": "rogertm/twenty-em-icon-pack",
+	"name": "themingisprose/icon-pack",
 	"description": "Icon Font",
 	"keywords": ["icon", "font"],
-	"homepage": "https://themingisprose.com/twenty-em/icon-pack",
+	"homepage": "https://themingisprose.com/icon-pack",
 	"license": "GPL-2.0-or-later",
 	"minimum-stability": "stable",
 	"authors": [
@@ -15,7 +15,7 @@
 	],
 	"support": {
 		"email": "roger213tm@gmail.com",
-		"issues": "https://github.com/rogertm/twenty-em-icon-pack/issues",
-		"source": "https://github.com/rogertm/twenty-em-icon-pack"
+		"issues": "https://github.com/themingisprose/icon-pack/issues",
+		"source": "https://github.com/themingisprose/icon-pack"
 	}
 }
