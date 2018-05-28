@@ -6,7 +6,7 @@
 
 Puedes ver ejemplos de **Twenty'em Icon Pack** en nuestra página demo:
 
-* [https://themingisprose.com/twenty-em/icon-pack/](https://themingisprose.com/twenty-em/icon-pack/)
+* [https://themingisprose.com/icon-pack/](https://themingisprose.com/icon-pack/)
 
 ## IcoMoon App
 
