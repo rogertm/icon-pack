@@ -8788,16 +8788,16 @@
         "isMulticolor2": false,
         "grid": 16,
         "tags": [
-          "new"
+          "danger"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 1248,
+        "order": 1426,
         "id": 174,
-        "name": "new",
+        "name": "danger",
         "prevSize": 32,
         "code": 59946
       },
@@ -13622,7 +13622,7 @@
         {}
       ],
       "properties": {
-        "order": 1410,
+        "order": 1427,
         "id": 12,
         "name": "warning",
         "prevSize": 32,
@@ -13984,8 +13984,8 @@
   "height": 1024,
   "metadata": {
     "name": "icomoon",
-    "url": "https://themingisprose.com/twenty-em/icon-pack/",
-    "designer": "Twenty'em",
+    "url": "https://themingisprose.com/icon-pack/",
+    "designer": "Theming is Prose",
     "designerURL": "https://themingisprose.com",
     "license": "GPL v2",
     "licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
@@ -13993,7 +13993,7 @@
   "preferences": {
     "showGlyphs": true,
     "showCodes": true,
-    "showQuickUse": true,
+    "showQuickUse": false,
     "showQuickUse2": true,
     "showSVGs": true,
     "fontPref": {
@@ -14001,10 +14001,10 @@
       "metadata": {
         "fontFamily": "icomoon",
         "majorVersion": 1,
-        "minorVersion": 1,
-        "fontURL": "https://themingisprose.com/twenty-em/icon-pack/",
-        "description": "Twenty'em Icon Pack",
-        "designer": "Twenty'em",
+        "minorVersion": 2,
+        "fontURL": "https://themingisprose.com/icon-pack/",
+        "description": "Icon Pack",
+        "designer": "Theming is Prose",
         "designerURL": "https://themingisprose.com",
         "license": "GPL v2",
         "licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
@@ -14025,7 +14025,8 @@
       "cssVarsFormat": "scss",
       "selector": "class",
       "classSelector": ".icomoon",
-      "resetPoint": 59648
+      "resetPoint": 59648,
+      "autoHost": false
     },
     "imagePref": {
       "prefix": "icomoon-",
@@ -14043,6 +14044,11 @@
       "addBgColor": false
     },
     "historySize": 50,
-    "showLiga": true
+    "showLiga": true,
+    "quickUsageToken": {
+      "Twentyem": "M2U1ZGJiZmE0NTllNDc1Y2FlMzk4ZGY3ZGIzOWQ4MTYjMSMxNTEzMjk1NjgxIyMj"
+    },
+    "gridSize": 16,
+    "showGrid": false
   }
 }

@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?b7bmat') format('truetype'),
-    url('fonts/icomoon.woff?b7bmat') format('woff'),
-    url('fonts/icomoon.svg?b7bmat#icomoon') format('svg');
+    url('fonts/icomoon.ttf?586iop') format('truetype'),
+    url('fonts/icomoon.woff?586iop') format('woff'),
+    url('fonts/icomoon.svg?586iop#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icomoon-"], [class*=" icomoon-"] {
+.icomoon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -926,7 +926,7 @@
 .icomoon-network:before {
   content: "\ea29";
 }
-.icomoon-new:before {
+.icomoon-danger:before {
   content: "\ea2a";
 }
 .icomoon-new-message:before {
