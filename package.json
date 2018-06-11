@@ -1,0 +1,19 @@
+{
+  "name": "icon-pack",
+  "version": "1.1.3",
+  "description": "**Twenty'em Icon Pack** es un paquete de íconos generado con la [App de IcoMoon.io](https://icomoon.io/app/) usado en el proyecto [Twenty'em WordPress Framework](https://github.com/rogertm/twenty-em).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themingisprose/icon-pack.git"
+  },
+  "keywords": [
+    "icon",
+    "font"
+  ],
+  "author": "rogertm",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/themingisprose/icon-pack/issues"
+  },
+  "homepage": "https://themingisprose.com/icon-pack"
+}
